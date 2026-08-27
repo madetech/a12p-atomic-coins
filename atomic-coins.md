@@ -1,32 +1,4 @@
-# DevOps Apprenticeship Coins (Level 4)
-## How this works
-
-Coins are **self-contained, atomic goals** that provide evidence towards one or more apprenticeship Duties. Each coin stands on its own — there are no sub-milestones to work through, and no coin depends on a specific scheduled event (training day, cohort activity, etc.). If a coin references a technique or tool, any suitable real example from your own project work counts as evidence.
-
-Coins are a menu for variety and stretch, not a checklist for EPA sign-off. Full KSB coverage is expected to emerge from the sum of your day-to-day work and reflection over the apprenticeship — most of which will never become a coin. We map coins to Duties/KSBs so you can see what kind of skill each one builds, and so your mentors can point you at a specific coin if they spot a KSB that isn't otherwise showing up in your evidence. That's the tags' only job.
-
-Coins are grouped into **10 themes**, each mapping to a cluster of related Duties. You are not expected to complete every coin. As a guideline, aim for **at least 1-2 coins per theme** over the course of your apprenticeship, choosing the ones most relevant to your project and interests. Coins marked **(advanced)** assume you've already built some familiarity with the theme (via a base coin in that theme, or equivalent experience) — they're optional deeper dives, not a requirement.
-
-Each coin lists:
-- **Duties** it evidences (D1-D13, per the apprenticeship standard)
-- **KSBs** it evidences (Knowledge, Skill, and Behaviour references)
-- **Evidence** — what you need to produce or demonstrate to claim the coin
-
-## Evidence format
-
-Every coin's primary evidence is an **artefact** — a pipeline, a diagram, a test suite, a tuned alert, a retro output, a mentee's written reflection. This should stand on its own; you don't need a witness sign-off to claim most coins.
-
-Separately, your apprenticeship also requires **3 formal Employer Witness Testimonies** across the whole programme, each completed by a senior delivery stakeholder and covering two dated, real examples of you demonstrating competency.
-
-These 3 testimonies aren't tied to individual coins — each one should map holistically across whichever coins/duties the observed examples naturally cover, per the standard's own guidance ("one example could cover criteria from multiple modules across the standard"). In practice:
-- Most coins only ever need the artefact — no witness required.
-- Aim to line up your 3 testimonies with moments that naturally span several coins at once, especially ones evidencing interpersonal/cultural duties (D2, D3, D4, D13), where a stakeholder's outside perspective adds something an artefact alone can't.
-- Space the 3 testimonies out across the apprenticeship (e.g. roughly one every 2-3 months, once you've finished bootcamp and joined a delivery) rather than leaving them all to the end — talk to your point of contact/people manager about timing.
-
-See `witness-testimony-template.md` in this directory for the testimony format itself.
-
----
-
+# Atomic Coins
 ## Theme 1: Code & Test Craft
 *Duties: D1*
 
@@ -43,7 +15,7 @@ Write integration and/or end-to-end tests for a real feature, deliberately decid
 ### Second Tongue
 **Duties:** D1 · **KSBs:** K7, S17
 
-Write and ship working code in a second general-purpose programming language, different from the one you use day-to-day. Explain what transferred from your primary language, what didn't, and one thing the new language does differently that changed how you approached a problem.
+Complete a genuine piece of work in a second general-purpose programming language, different from the one you use day-to-day — either real work for your delivery (e.g. a Python or Go script/tool alongside a mostly TypeScript project) or a side project with real shape to it (e.g. a small full-stack to-do app) — a kata or single exercise isn't enough on its own. Explain what transferred from your primary language, what didn't, and one thing the new language does differently that changed how you approached a problem.
 
 ### Infrastructure Fluent
 **Duties:** D1, D7 · **KSBs:** K7, S18
@@ -93,7 +65,7 @@ Introduce someone without a coding background (e.g. a non-technical colleague) t
 ### Own It
 **Duties:** D13 · **KSBs:** S11, B3
 
-Take end-to-end ownership of a change you deployed to production — including responding to a real issue, alert, or incident related to it after release. Document what happened, how you diagnosed it, and what you'd do differently next time.
+Take an active, hands-on role in responding to a real production issue, alert, or incident — whether or not the triggering change was yours — covering diagnosis, remediation, and root cause analysis. Document what happened, how you and the team worked through it, and what you'd do differently next time.
 
 ### Blameless Retro
 **Duties:** D4 · **KSBs:** K23, B4
@@ -125,10 +97,10 @@ Demonstrate effective use of a branching strategy (trunk-based development, shor
 
 Build or operate a CI pipeline that automatically runs the test suite and produces a build artefact on every commit/PR. Show an example of a failing build being caught before merge, explain what went wrong and how you resolved the issue.
 
-### Everything In Its Right Place *(advanced)*
-**Duties:** D5 · **KSBs:** K2
+### Extend the Pipeline *(advanced)*
+**Duties:** D5 · **KSBs:** K1, K2, S15
 
-Bring a previously untracked or inconsistently-tracked category of project artefact (config, infra definitions, docs, pipeline definitions) under version control, and get your team to actually adopt a documented workflow for it — not just propose one. Show evidence that people other than you are using it.
+Design, build, and integrate a new capability into an existing CI/CD pipeline — e.g. a new automated check, a new artefact-publishing step, or bringing a previously untracked category of project artefact (config, infra definitions, docs) under version control with the pipeline itself enforcing it. Take it from idea to a real, running pipeline stage the team relies on for every relevant commit/PR.
 
 ---
 
@@ -145,7 +117,7 @@ Implement release/deployment orchestration (using an API where relevant) as part
 
 Identify a manual task that is repeated regularly and automate it (via scripting or an API). Quantify or clearly describe the time/effort saved, and weigh this against the cost of building the automation.
 
-### Zero Downtime
+### Zero Downtime *(advanced)*
 **Duties:** D6 · **KSBs:** K15, S15
 
 Implement a deployment strategy (blue/green, canary, or rolling) that allows your team to release a real change without user-facing downtime. Show what would have happened under the old approach vs the new one.
@@ -203,7 +175,7 @@ Choose and justify a persistence/storage technology for a specific functional or
 ### A Shade Beyond Engineering
 **Duties:** D8 · **KSBs:** K10, K18, S2
 
-Shadow and support a non-engineer (e.g. user researcher, designer, business analyst) with a piece of work. Document what associate-level responsibilities look like for the role, how their role contributes to decisions, and one specific way their perspective affected a decision you were involved in.
+Shadow and support a non-engineer (e.g. user researcher, designer, business analyst) with a piece of work — often a UCD, UX, or BA colleague within your own delivery. Document what associate-level responsibilities look like for the role, how their role contributes to decisions, and one specific way their perspective affected a decision you were involved in.
 
 ### Built to Bend *(advanced)*
 **Duties:** D8 · **KSBs:** K21, S22
@@ -273,7 +245,7 @@ Tune the alert thresholds/configuration on an existing monitor — ideally align
 ### Cert It
 **Duties:** D11 · **KSBs:** K25
 
-Earn an entry-level cloud certification — AWS Certified Cloud Practitioner, Microsoft Azure Fundamentals (AZ-900), or a Databricks Fundamentals/Associate-level accreditation.
+Earn an entry-level cloud (or closely-related platform) certification — e.g. AWS Certified Cloud Practitioner, Microsoft Azure Fundamentals (AZ-900), Google Cloud Digital Leader, or a Databricks Fundamentals/Associate-level accreditation. Got something else in mind? Talk to your mentor/point of contact — we're happy to consider other entry-level certifications relevant to cloud/DevOps practice on a case-by-case basis.
 
 ### Green Software Practitioner
 **Duties:** D11 · **KSBs:** K22, S16
