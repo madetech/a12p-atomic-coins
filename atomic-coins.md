@@ -15,7 +15,7 @@ Write integration and/or end-to-end tests for a real feature, deliberately decid
 ### Second Tongue
 **Duties:** D1 · **KSBs:** K7, S17
 
-Write and ship working code in a second general-purpose programming language, different from the one you use day-to-day. Explain what transferred from your primary language, what didn't, and one thing the new language does differently that changed how you approached a problem.
+Complete a genuine piece of work in a second general-purpose programming language, different from the one you use day-to-day — either real work for your delivery (e.g. a Python or Go script/tool alongside a mostly TypeScript project) or a side project with real shape to it (e.g. a small full-stack to-do app) — a kata or single exercise isn't enough on its own. Explain what transferred from your primary language, what didn't, and one thing the new language does differently that changed how you approached a problem.
 
 ### Infrastructure Fluent
 **Duties:** D1, D7 · **KSBs:** K7, S18
@@ -65,7 +65,7 @@ Introduce someone without a coding background (e.g. a non-technical colleague) t
 ### Own It
 **Duties:** D13 · **KSBs:** S11, B3
 
-Take end-to-end ownership of a change you deployed to production — including responding to a real issue, alert, or incident related to it after release. Document what happened, how you diagnosed it, and what you'd do differently next time.
+Take an active, hands-on role in responding to a real production issue, alert, or incident — whether or not the triggering change was yours — covering diagnosis, remediation, and root cause analysis. Document what happened, how you and the team worked through it, and what you'd do differently next time.
 
 ### Blameless Retro
 **Duties:** D4 · **KSBs:** K23, B4
@@ -97,10 +97,10 @@ Demonstrate effective use of a branching strategy (trunk-based development, shor
 
 Build or operate a CI pipeline that automatically runs the test suite and produces a build artefact on every commit/PR. Show an example of a failing build being caught before merge, explain what went wrong and how you resolved the issue.
 
-### Everything In Its Right Place *(advanced)*
-**Duties:** D5 · **KSBs:** K2
+### Extend the Pipeline *(advanced)*
+**Duties:** D5 · **KSBs:** K1, K2, S15
 
-Bring a previously untracked or inconsistently-tracked category of project artefact (config, infra definitions, docs, pipeline definitions) under version control, and get your team to actually adopt a documented workflow for it — not just propose one. Show evidence that people other than you are using it.
+Design, build, and integrate a new capability into an existing CI/CD pipeline — e.g. a new automated check, a new artefact-publishing step, or bringing a previously untracked category of project artefact (config, infra definitions, docs) under version control with the pipeline itself enforcing it. Take it from idea to a real, running pipeline stage the team relies on for every relevant commit/PR.
 
 ---
 
@@ -117,7 +117,7 @@ Implement release/deployment orchestration (using an API where relevant) as part
 
 Identify a manual task that is repeated regularly and automate it (via scripting or an API). Quantify or clearly describe the time/effort saved, and weigh this against the cost of building the automation.
 
-### Zero Downtime
+### Zero Downtime *(advanced)*
 **Duties:** D6 · **KSBs:** K15, S15
 
 Implement a deployment strategy (blue/green, canary, or rolling) that allows your team to release a real change without user-facing downtime. Show what would have happened under the old approach vs the new one.
@@ -175,7 +175,7 @@ Choose and justify a persistence/storage technology for a specific functional or
 ### A Shade Beyond Engineering
 **Duties:** D8 · **KSBs:** K10, K18, S2
 
-Shadow and support a non-engineer (e.g. user researcher, designer, business analyst) with a piece of work. Document what associate-level responsibilities look like for the role, how their role contributes to decisions, and one specific way their perspective affected a decision you were involved in.
+Shadow and support a non-engineer (e.g. user researcher, designer, business analyst) with a piece of work — often a UCD, UX, or BA colleague within your own delivery. Document what associate-level responsibilities look like for the role, how their role contributes to decisions, and one specific way their perspective affected a decision you were involved in.
 
 ### Built to Bend *(advanced)*
 **Duties:** D8 · **KSBs:** K21, S22
@@ -245,7 +245,7 @@ Tune the alert thresholds/configuration on an existing monitor — ideally align
 ### Cert It
 **Duties:** D11 · **KSBs:** K25
 
-Earn an entry-level cloud certification — AWS Certified Cloud Practitioner, Microsoft Azure Fundamentals (AZ-900), or a Databricks Fundamentals/Associate-level accreditation.
+Earn an entry-level cloud (or closely-related platform) certification — e.g. AWS Certified Cloud Practitioner, Microsoft Azure Fundamentals (AZ-900), Google Cloud Digital Leader, or a Databricks Fundamentals/Associate-level accreditation. Got something else in mind? Talk to your mentor/point of contact — we're happy to consider other entry-level certifications relevant to cloud/DevOps practice on a case-by-case basis.
 
 ### Green Software Practitioner
 **Duties:** D11 · **KSBs:** K22, S16
